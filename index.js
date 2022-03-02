@@ -2,11 +2,15 @@ const express = require('express')
 const app = express()
 app.use(express.json());
 
+const port = process.env.PORT
+
 app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
 app.use('/',require("./routes/bfhl"))
 
-console.log("started server successfully!");
-app.listen(3000)
+
+app.listen(port,()=>{
+  console.log("started server successfully!");
+})
