@@ -8,5 +8,5 @@ app.get('/', function (req, res) {
 
 app.use('/',require("./routes/bfhl"))
 
-
+console.log("started server successfully!");
 app.listen(3000)
