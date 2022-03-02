@@ -24,7 +24,7 @@ router.post(
             const alphabets = [];
             for (const item of data){
                 if(isNumber(item)){
-                    nums.push(parseInt(item));
+                    nums.push(item);
                 } else {
                     alphabets.push(item);
                 }
