@@ -8,10 +8,10 @@ app.use(express.json());
 const port = process.env.PORT
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.send('Hello World! (By Samarth Gupta)');
 })
 
-app.use('/',require("./routes/bfhl"))
+app.use('/',require("./routes/bfhl"));
 
 
 app.listen(port,()=>{
